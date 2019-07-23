@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "962334259750",
+    "firebase_url": "https://pbri-new.firebaseio.com",
+    "project_id": "pbri-new",
+    "storage_bucket": "pbri-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962334259750:android:3bd6d902bf97e0df",
+        "android_client_info": {
+          "package_name": "com.patanjali.pbri_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962334259750-mn4mqh2i58htu5sb6tj0ut44096hc18g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvUaFBBfxOdOOJ0c49Fz_VZSX-fnlP69A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

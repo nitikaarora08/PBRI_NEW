@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    android:layout_margin="6dp"
+    android:elevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/white_box"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgCrop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        />
+
+    <TextView
+        android:id="@+id/txtCropName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="10dp"
+        android:textColor="#009688"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txSubCropID"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+

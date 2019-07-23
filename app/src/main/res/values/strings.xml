@@ -1,0 +1,313 @@
+<resources>
+
+    <string name="app_name">Patanjali Organic Grower</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home">Home</string>
+    <string name="farm_detail">Farm   Details</string>
+    <string name="farm_lab">Farm Lab</string>
+    <string name="cost_benefits">Cost  Benefits</string>
+    <string name="help">Contact Us</string>
+    <string name="save_farm_loc">Please Save Farm Location First</string>
+    <string name="save">Save</string>
+    <string name="save_crop_info">Save Crop Info</string>
+    <string name="save_dataCollection">Save Data Collection</string>
+    <string name="farmer_practice">Farmer Practice</string>
+    <string name="pbri_practice">Pbri Practice</string>
+
+
+    <string name="crop_info">Crop Information</string>
+
+    <string name="choose_language">Language Setting</string>
+    <string name="hindi">Hindi</string>
+    <string name="english">English</string>
+    <string name="about">About</string>
+    <string name="gallery">Gallery</string>
+    <string name="Select_State">Select State</string>
+    <string name="education">Education</string>
+    <string name="Select_District">Select District</string>
+    <string name="select">Select</string>
+    <string name="please_select_irrigation_status">Please select the irrigation sources</string>
+    <string name="auto_recomm">Recommended Fertilizer Dose</string>
+    <string name="add_new_farm_lab"> + Add new Farm Lab </string>
+    <string name="add_new_crop"> + Add New Crop </string>
+    <string name="add_new_farm_book"> + Add New Farm Book </string>
+
+    <string name="farmer_details">Farmer Details</string>
+    <string name="aadhar_scan">Scan Aadhar Card </string>
+    <string name="address">Address: </string>
+    <string name="contactus_address">Patanjali Food and Herbal Park <br>Padartha, Laksar Rd </br></string>
+    <string name="contactus_num"> Contact number:827599999</string>
+    <string name="contactus_email">  Email address: pfsp.pbri@gmail.com </string>
+
+    <string name="farmername">Farmer Name</string>
+    <string name="adharno">Aadhar Card Number</string>
+    <string name="villagename">Village Name</string>
+    <string name="mandalname">Mandal</string>
+    <string name="landholding">Land holding (acre)</string>
+    <string name="landmark">Landmark</string>
+    <string name="farmerdob">Farmer DOB</string>
+    <string name="farmerage">Age</string>
+    <string name="guideline">Guidelines</string>
+    <string name="references">References</string>
+    <string name="guideline_staff">Guidelines for collecting data at farm lab staff</string>
+    <string name="guideline_farmer">Guidelines for collecting data at farm lab farmer</string>
+
+
+
+    <string name="plant1">plant1</string>
+    <string name="plant2">plant2</string>
+    <string name="plant3">plant3</string>
+    <string name="plant4">plant4</string>
+    <string name="plant5">plant5</string>
+
+
+
+    <string-array name="farmer_gender">
+        <item>Gender</item>
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <string-array name="setting">
+        <item>Select</item>
+        <item>Language</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="CasteCategory_values">
+        <item>Category</item>
+        <item>General</item>
+        <item>OBC</item>
+        <item>SC</item>
+        <item>ST</item>
+    </string-array>
+
+    <string-array name="Religion_values">
+        <item>Religion</item>
+        <item>Hinduism</item>
+        <item>Muslim</item>
+        <item>Sikhism</item>
+        <item>Christian</item>
+        <item>Buddhism</item>
+        <item>Jainism</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="farmermobileno"> Mobile Number</string>
+
+    <string name="login_mob">Please Enter Resistered Mobile Number:</string>
+    <string name="otp">OTP</string>
+    <string name="farmer_wmobileno"> Whatsapp Mobile Number</string>
+
+    <string name="farmeraddress">Address</string>
+
+    <string name="farmerpincode">Pin Code</string>
+
+    <string name="farmeremailid">Email ID</string>
+
+    <string name="farm_location">Farm Location</string>
+    <string name="machinary">Machinery</string>
+    <string name="agriculture">Agriculture</string>
+    <string name="cancel">Back</string>
+    <string name="submit">Submit</string>
+    <string name="call">Call</string>
+    <string name="back">Back</string>
+    <string name="message">Message</string>
+
+    <string name="date_time">Present date and time</string>
+    <string name="livestock">Livestock</string>
+    <string name="others">Add Others</string>
+    <string name="aquaculture">Aquaculture</string>
+    <string name="beekeeping">Beekeeping</string>
+    <string name="sericulture">Sericulture</string>
+    <string name="farm_income">Farm Income</string>
+    <string name="Items">Items</string>
+    <string name="main_crop">Main Crop</string>
+    <string name="sub_crop">Sub Crop</string>
+    <string name="cost_others">Straw+ Byproduct</string>
+
+    <string name="greenManu">Green manuring </string>
+    <string name="fym">FYM (ton/acre)</string>
+    <string name="bio_fertilizer">Bio- fertilizer </string>
+    <string name="PROM">PROM (Kg or L/acre) </string>
+    <string name="JivaAmrit">JivaAmrit</string>
+    <string name="oil_cake">Oil cake (Kg/acre) </string>
+
+
+
+    <string name="location">farm information </string>
+    <string name="soiltest">Soil Test</string>
+    <string name="soiltype">Soil type</string>
+    <string name="crop_information">Crop Information</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="cropPattern">Crop Pattern</string>
+    <string name="rainfallDistribution">Select Rainfall Distribution</string>
+
+    <string-array name="CropSeason_value">
+        <item>Crop Season</item>
+        <item>Rabi</item>
+        <item>Kharif</item>
+        <item>Summer</item>
+    </string-array>
+
+
+    <string-array name="rainfall_values">
+        <item>Select Rainfall Distribution</item>
+        <item>Normal</item>
+        <item>Uneven</item>
+    </string-array>
+
+    <string-array name="generalobservation_values">
+        <!--<item>Select General Observation</item>-->
+        <item>Normal</item>
+        <item>Heavy</item>
+    </string-array>
+    <string-array name="cropcondition_values">
+        <item>Select Crop Condition</item>
+        <item>Very Good</item>
+        <item>Good</item>
+        <item>Normal</item>
+        <item>Poor</item>
+    </string-array>
+
+
+    <string name="landpreparationdate">Land Preparation Date</string>
+    <string name="dateof_sowing">Sowing Date</string>
+    <string name="dateofplanting">Planting Date</string>
+    <string name="noofirrigation">Number of Irrigation</string>
+    <string name="data_collection">Data Collection</string>
+    <string name="farm_lab_book">Farm Lab Book</string>
+
+
+    <string name="profit_loss">Profit/Loss</string>
+    <string name="rupees">(Rs.)</string>
+    <string name="login">Login</string>
+    <string name="expense">Expenses</string>
+    <string name="loss">Total Loss: </string>
+    <string name="profit">Total Profit: </string>
+    <string name="cropseason">Crop Condition</string>
+    <string name="morethan">More than 8</string>
+    <string name="morethan100">More than 100</string>
+    <string name="lessthan">Less Than 6</string>
+
+
+    <string name="total_cost">Total Cost(Rs.)</string>
+    <string name="otherexpenses">Other Expenses(Rs.)</string>
+    <string name="income">Income</string>
+    <string name="costlandpreparation">Land Preparation(Rs.)</string>
+
+    <string name="write_description">Write Description here</string>
+    <string name="contact_address">Contact Address</string>
+    <string name="add_pest">Add Pest</string>
+    <string name="add_disease">Add Disease</string>
+
+    <string name="addsub_crop">Add Sub Crop</string>
+    <string name="add_soil">Add Soil</string>
+    <string name="add_farm_lab_book_detail">Add Farm Lab Book Details</string>
+
+
+    <string name="cow">Cow</string>
+    <string name="baffallow">Buffalo</string>
+    <string name="goat">Goat</string>
+    <string name="pautry">Poultry</string>
+    <string name="sheep">Sheep</string>
+    <string name="fish">Fish</string>
+    <string name="prown">Prawn</string>
+    <string name="crab">Crab</string>
+
+    <string name="production">Production (quintals)</string>
+    <string name="marketing">Marketing (quintals)</string>
+    <string name="marketvalue">Total income (Rs.)</string>
+
+    <string name="crop_status">Choose Main Crop</string>
+    <string name="sub_Crop">Choose Sub Crop</string>
+    <string name="pest_observed">Pest Observed</string>
+    <string name="pestisides">Pesticide</string>
+    <string name="fertilizer">Fertilizer</string>
+    <string name="irrigation_status_yes">Irrigation Sources (Yes)</string>
+    <string name="irrigation_status_no">Irrigation Sources (No)</string>
+
+    <string name="totalinvestmentoncrop">Total investment on the crop per acre(Rs)</string>
+    <string name="totalincomeoncrop">Total income on the crop per acre(Rs)</string>
+    <string name="nitrogenofsoil">Nitrogen(N)</string>
+    <string name="phosphorousofsoil">Phosphorous(P)</string>
+    <string name="potassiumofsoil">Potassium(K)</string>
+    <string name="onlyvarietyname">Variety</string>
+    <string name="soilcollectiondate">Soil Collection Date</string>
+    <string name="weednoticed">Weed Noticed</string>
+    <string name="firstweedingdate">1st Weeding Date</string>
+    <string name="virus">Virus</string>
+    <string name="nematodes">Nematodes</string>
+    <string name="secondweedingdate">2nd Weeding Date</string>
+    <string name="firstbiopestisidedate">1st Application Date</string>
+    <string name="secondbiopestisidedate">2st Application Date</string>
+    <string name="diseaseobserverd">Disease Observed</string>
+    <string name="datarecordedplantheight">Plant Height(cm)</string>
+    <string name="datarecordednooftillers">No. Of Productive Tiller/Plant</string>
+
+    <string name="datarecordedpaniclesize">Panicle Size(cm)</string>
+
+    <string name="datarecordednooffruit">No Of Fruit/Plant</string>
+
+    <string name="datarecordeddateofharvesting">Date of harvesting</string>
+
+    <string name="datarecordedgrainweight">1000 grain  weight(gm)</string>
+
+    <string name="datarecordedgrainyieldplant">Grain Yield/plant (gm)</string>
+
+    <string name="datarecordedgrainyieldplot">Yield/plot(gm/kg)</string>
+    <string name="straw_yield">Straw Yield (kg/quintal)</string>
+    <string name="by_product">Byproduct (Kg)</string>
+    <string name="annual_rain">Annual Rainfall</string>
+    <string name="min_temp">Minimum Temprature (°C)</string>
+    <string name="max_temp">Maximum Temprature (°C)</string>
+    <string name="rel_humidity">Relative Humidity (%)</string>
+    <string name="sunshine_hours">Sunshine hours</string>
+    <string name="change_location">Change Location</string>
+
+    <string name="soil_ph">Soil pH</string>
+    <string name="organicsoil">Organic Carbon</string>
+
+    <string name="datarecordednoofrainydays">Number Of Rainy Days</string>
+
+
+    <string name="chemical_farming">Practicing Chemical Free Farming</string>
+    <string name="org_certificate">Received  Organic Farming certificate</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="month_year">Month/Year</string>
+    <string name="add_certificate">Add Certificate</string>
+
+    <string name="costseed">Seed(Rs.)</string>
+
+    <string name="costfertilizer">Fertilizer(Rs.)</string>
+
+    <string name="costpestiside">Pesticides(Rs.)</string>
+
+    <string name="costplanting">Planting(Rs.)</string>
+
+    <string name="costweeding">Weeding(Rs.)</string>
+
+    <string name="costirrigation">Irrigation</string>
+
+    <string name="costharvesting">Harvesting and Threshing(Rs.)</string>
+
+    <string name="costwinnoying">Winnowing(Rs.)</string>
+    <string name="costpacking">Packing(Rs.)</string>
+    <string name="costtransportation">Transportation(Rs.)</string>
+
+    <string name="area">Area (acre)</string>
+
+
+    <string name="wrong_pincode_txt">Wrong PIN Code</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_farmer_profile">FarmerProfile</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+</resources>

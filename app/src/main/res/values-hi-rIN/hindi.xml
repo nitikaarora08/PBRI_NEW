@@ -1,0 +1,319 @@
+<resources>
+
+    <string name="app_name">पतंजली फार्म लैब</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home">होम</string>
+    <string name="farm_lab">फार्म लैब</string>
+    <string name="crop_info">फसल की जानकारी</string>
+    <string name="auto_recomm">अनुशंसित उर्वरक खुराक</string>
+    <string name="add_new_crop"> + नई फसल जोड़ें</string>
+    <string name="add_new_farm_lab"> +  नई फार्म लैब जोड़ें</string>
+    <string name="please_select_irrigation_status"> कृपया सिंचाई स्रोतों का चयन करें </string>
+    <string name="add_new_farm_book"> + नई फार्म बुक जोड़ें</string>
+
+    <string name="guideline_farmer">फार्म लैब किसान पर डेटा एकत्र करने के लिए दिशानिर्देश</string>
+    <string name="guideline_staff">फार्म लैब कर्मचारियों पर डेटा एकत्र करने के लिए दिशानिर्देश</string>
+    <string name="references">संदर्भ</string>
+    <string name="guideline">दिशानिर्देश</string>
+
+    <string name="help">संपर्क करें</string>
+    <string name="cost_benefits">लागत लाभ</string>
+    <string name="farm_detail">खेत का  विवरण</string>
+
+
+    <string name="plant1">पौधा1</string>
+    <string name="plant2">पौधा2</string>
+    <string name="plant3">पौधा3</string>
+    <string name="plant4">पौधा4</string>
+    <string name="plant5">पौधा5</string>
+
+    <string name="choose_language">भाषा सेटिंग</string>
+    <string name="hindi">हिंदी</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="back">वापस</string>
+    <string name="save_farm_loc">कृपया फार्म का स्थान पहले सहेजें</string>
+    <string name="save">जमा करें</string>
+    <string name="save_dataCollection">डेटा संग्रह सहेजें</string>
+    <string name="save_crop_info">फसल की जानकारी बचाएं</string>
+
+    <string name="farmer_details">किसान विवरण</string>
+    <string name="aadhar_scan">आधार कार्ड स्कैन करें</string>
+    <string name="address">पता: </string>
+    <string name="about">बारे में</string>
+    <string name="gallery">गेलरी</string>
+    <string name="Select_State">राज्य चुनें</string>
+    <string name="Select_District">जिले का चयन करें</string>
+    <string name="education">शिक्षा</string>
+    <string name="select">चयन करें</string>
+
+    <string name="farmername">किसान का नाम</string>
+    <string name="adharno">आधार कार्ड नंबर</string>
+    <string name="villagename">गांव का नाम</string>
+    <string name="mandalname">मंडल</string>
+    <string name="landholding">भूमि होल्डिंग (एकड़)</string>
+    <string name="landmark">भूमि चिह्न</string>
+    <string name="farmerdob">जन्म तिथि</string>
+    <string name="farmerage">उम्र</string>
+
+    <string-array name="farmer_gender">
+        <item>लिंग</item>
+        <item>पुरुष</item>
+        <item>महिला</item>
+    </string-array>
+    <string-array name="setting">
+        <item>चयन करें</item>
+        <item>भाषा</item>
+        <item>लोग आउट</item>
+    </string-array>
+
+    <string-array name="CasteCategory_values">
+        <item>जाति श्रेणी</item>
+        <item>सामान्य</item>
+        <item>अन्य पिछड़ा वर्ग</item>
+        <item>अनुसूचित जाति</item>
+        <item>अनुसूचित जनजाति</item>
+    </string-array>
+
+<string-array name="Religion_values">
+        <item>धर्म</item>
+        <item>हिन्दू</item>
+        <item>मुस्लिम</item>
+        <item>सिख</item>
+        <item>इसाई</item>
+        <item>बुद्ध</item>
+        <item>जैन</item>
+    <item>अन्य</item>
+    </string-array>
+
+
+    <string-array name="rainfall_values">
+        <item>वर्षा का वितरण</item>
+        <item>सामान्य</item>
+        <item>असमान</item>
+    </string-array>
+
+
+     <string-array name="generalobservation_values">
+        <!--<item>सामान्य अवलोकन</item>-->
+        <item>सामान्य</item>
+        <item>भारी</item>
+    </string-array>
+
+    <string-array name="cropcondition_values">
+        <item>फसल की स्थिति</item>
+        <item>बहुत अच्छा</item>
+        <item>अच्छा</item>
+        <item>सामान्य</item>
+        <item>खराब</item>
+    </string-array>
+
+
+    <string name="otp">ओ.टी.पी.</string>
+    <string name="login_mob">कृपया पंजीकृत मोबाइल नंबर दर्ज करें:</string>
+    <string name="farmermobileno">मोबाइल नंबर</string>
+    <string name="farmer_wmobileno">व्हाट्स एप मोबाइल नंबर</string>
+
+    <string name="farmeraddress">पता</string>
+
+    <string name="farmerpincode">पिन कोड</string>
+
+    <string name="farmeremailid">ईमेल आईडी</string>
+
+    <string name="farm_location">खेत का स्थान</string>
+    <string name="machinary">मशीनरी</string>
+    <string name="agriculture">कृषि</string>
+    <string name="submit">जमा करें</string>
+    <string name="cancel">वापस</string>
+    <string name="call">कॉल</string>
+    <string name="message">संदेश</string>
+    <string name="pbri_practice">पी.बी.आर.आई अभ्यास</string>
+    <string name="farmer_practice">किसान अभ्यास</string>
+
+    <string name="date_time">वर्तमान दिनांक और समय</string>
+    <string name="livestock">पशु</string>
+    <string name="others"> अन्य जोड़ें</string>
+    <string name="aquaculture">मत्स्यपालन</string>
+    <string name="beekeeping">मधुमक्खी पालन</string>
+    <string name="sericulture">रेशम के कीड़ों का पालन</string>
+    <string name="farm_income">खेत की आमदनी</string>
+
+
+    <string name="oil_cake">खली (किलो /एकड़) </string>
+    <string name="greenManu">हरी खाद </string>
+    <string name="JivaAmrit">जीवामृत</string>
+    <string name="PROM">प्रोम  (किलो या ली./एकड़)</string>
+    <string name="bio_fertilizer">जैव-उर्वरक</string>
+    <string name="fym">जैविक खाद (टन/एकड़) </string>
+
+
+    <string name="location">खेत की जानकारी</string>
+    <string name="soiltest">मृदा परीक्षण</string>
+    <string name="crop_information">फसल की जानकारी</string>
+    <string name="high">उच्च</string>
+    <string name="medium">मध्यम</string>
+    <string name="low">कम</string>
+    <string name="soiltype">मिट्टी के प्रकार</string>
+    <string name="cropPattern">फसल पैटर्न</string>
+    <string name="cropseason">फसल की स्थिति</string>
+    <string name="rainfallDistribution">वर्षा का वितरण</string>
+
+    <string name="morethan100">100 से अधिक है</string>
+    <string name="morethan">8 से अधिक है</string>
+    <string name="lessthan">6 से कम</string>
+    <string-array name="CropSeason_value">
+        <item>बुवाई का समय</item>
+        <item>रबी</item>
+        <item>खरीफ</item>
+        <item>ग्रीष्मकालीन फसल</item>
+    </string-array>
+
+    <string name="irrigation_status_yes">सिंचाई के स्रोत (हाँ)</string>
+    <string name="irrigation_status_no">सिंचाई के स्रोत (नहीं)</string>
+
+
+    <string name="landpreparationdate">भूमि की तैयारी की तारीख</string>
+    <string name="dateof_sowing">बुवाई का समय</string>
+    <string name="dateofplanting">पोध रोपण की तारीख</string>
+    <string name="noofirrigation">सिंचाई की संख्या</string>
+    <string name="data_collection">डेटा संग्रहण</string>
+    <string name="farm_lab_book">फार्म लैब बुक</string>
+    <string name="contactus_address">पतंजलि फूड एंड हर्बल पार्क <br></br>पद्मार्थ, लक्सर आर.डी. </string>
+    <string name="contactus_num">     संपर्क नंबर: 827599999</string>
+    <string name="contactus_email">     <br>ईमेल पता: pfsp.pbri@gmail.com</br></string>
+
+
+    <string name="rupees">(रुपये)</string>
+    <string name="profit_loss">लाभ हानि</string>
+
+    <string name="login">लॉग इन करें</string>
+
+    <string name="profit">कुल लाभ: </string>
+    <string name="loss">कुल नुकसान: </string>
+
+    <string name="month_year">महीना वर्ष</string>
+
+    <string name="expense">व्यय</string>
+    <string name="income">आय</string>
+    <string name="total_cost">कुल लागत(रुपये)</string>
+    <string name="otherexpenses">अन्य खर्चे(रुपये)</string>
+    <string name="main_crop">मुख्य फसल</string>
+    <string name="Items">आइटम</string>
+    <string name="sub_crop">उप फसल</string>
+    <string name="cost_others">स्ट्रॉ + बायप्रोडक्ट</string>
+    <string name="marketvalue">कुल आय (रुपये)</string>
+
+    <string name="costlandpreparation">भूमि की तैयारी (रुपये)</string>
+    <string name="diseaseobserverd">रोग का चयन करें</string>
+
+    <string name="org_certificate">प्राप्त जैविक खेती प्रमाण पत्र</string>
+    <string name="chemical_farming">रासायनिक मुक्त खेती का अभ्यास</string>
+    <string name="yes">हाँ</string><string name="no">नहीं</string>
+
+    <string name="add_certificate">प्रमाण पत्र जोड़ें</string>
+
+    <string name="straw_yield">भूसा /एकड़ (किलो/क्विंटल)</string>
+    <string name="by_product">उत्पादन (किलो)</string>
+    <string name="annual_rain">वार्षिक वर्षा</string>
+    <string name="max_temp">अधिकतम अस्थायी (डिग्री सेल्सियस)</string>
+    <string name="min_temp">न्यूनतम अस्थायी (डिग्री सेल्सियस)</string>
+    <string name="rel_humidity">सापेक्षिक आर्द्रता (%)</string>
+    <string name="sunshine_hours">धूप का समय</string>
+    <string name="change_location">स्थान बदलें</string>
+    <string name="sub_Crop">उप फसल चुनें</string>
+
+
+    <string name="crop_status">मुख्य फसल चुनें</string>
+
+    <string name="area">क्षेत्र (एकड़)</string>
+
+    <string name="pest_observed">कीटो का चयन करें</string>
+    <string name="pestisides">कीटनाशक</string>
+    <string name="fertilizer">उर्वरक</string>
+
+    <string name="add_farm_lab_book_detail">फार्म लैब बुक विवरण जोड़ें</string>
+
+    <string name="write_description">विवरण यहाँ लिखें</string>
+    <string name="contact_address">संपर्क पता</string>
+
+    <string name="add_pest">कीट जोड़ें</string>
+    <string name="add_disease">बीमारी जोड़ें</string>
+    <string name="add_soil">मिट्टी जोड़ें</string>
+    <string name="addsub_crop">उप फसल जोड़ें</string>
+
+
+    <string name="cow">गाय</string>
+    <string name="baffallow">भेंस</string>
+    <string name="goat">बकरियाँ </string>
+    <string name="pautry">मुर्गी</string>
+    <string name="sheep">भेड़</string>
+    <string name="fish">मछली</string>
+    <string name="prown">झींगा</string>
+    <string name="crab">केकड़ा</string>
+
+    <string name="production">उत्पादन (क्विंटल)</string>
+    <string name="marketing">बाजार (क्विंटल)</string>
+    <string name="totalinvestmentoncrop">प्रति एकड़ फसल पर कुल निवेश(रुपये)</string>
+    <string name="totalincomeoncrop">प्रति एकड़ फसल पर कुल आय(रुपये)</string>
+    <string name="nitrogenofsoil">मिट्टी में नाइट्रोजन(प्रतिशत)</string>
+    <string name="phosphorousofsoil">मिट्टी में फास्फोरस(प्रतिशत)</string>
+    <string name="potassiumofsoil">मिट्टी में पोटेशियम(प्रतिशत)</string>
+    <string name="onlyvarietyname">फसल की क़िस्म</string>
+    <string name="soilcollectiondate">मृदा नमूना संग्रह की तारीख</string>
+    <string name="weednoticed">फसल के खरपतवार</string>
+    <string name="firstweedingdate">प्रथम निराई की तारीख</string>
+    <string name="virus">विषाणु</string>
+    <string name="nematodes">सूत्रकृमि</string>
+    <string name="secondweedingdate">द्वितीय निराई की तारीख</string>
+    <string name="firstbiopestisidedate">प्रथम उपयोग की तारीख</string>
+    <string name="secondbiopestisidedate">द्वितीय उपयोग की तारीख</string>
+    <string name="datarecordedplantheight">पौधे की ऊंचाई (सेमी)</string>
+    <string name="datarecordednooftillers">कल्ले/कंसे की संख्या प्रति पौधा</string>
+
+    <string name="datarecordedpaniclesize">बाली का आकार(सेमी)</string>
+
+    <string name="datarecordednooffruit">फल/बालीयों की संख्या प्रति पौधा</string>
+
+    <string name="datarecordeddateofharvesting">कटाई की तिथि</string>
+
+    <string name="datarecordedgrainweight">1000 दानो का वजन(ग्राम)</string>
+
+    <string name="datarecordedgrainyieldplant">अनाज उपज / पौधा (ग्राम)</string>
+
+    <string name="datarecordedgrainyieldplot">उपज/एकड़ (ग्राम/किलो)</string>
+
+    <string name="soil_ph">जैविक पदार्थ सामग्री(पीएच)</string>
+    <string name="organicsoil">कार्बनिक कार्बन</string>
+
+
+    <string name="datarecordednoofrainydays">वर्षा के दिनों की संख्या</string>
+
+
+    <string name="costseed">बीज(रुपये)</string>
+
+    <string name="costfertilizer">उर्वरक(रुपये)</string>
+
+    <string name="costpestiside">कीटनाशक(रुपये)</string>
+
+    <string name="costplanting">रोपण(रुपये)</string>
+
+    <string name="costweeding">निराई(रुपये)</string>
+
+    <string name="costirrigation">सिंचाई</string>
+
+    <string name="costharvesting">कटाई /थ्रेशिंग(रुपये)</string>
+
+    <string name="costwinnoying">वरसाना(रुपये)</string>
+
+    <string name="costpacking">पैकिंग(रुपये)</string>
+
+    <string name="costtransportation">परिवहन(रुपये)</string>
+
+
+    <string name="wrong_pincode_txt">Wrong PIN Code</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

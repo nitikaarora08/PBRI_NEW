@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:id="@+id/title_tv"
+    android:layout_marginTop="10dp"
+    android:text="Select Item"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="#000"
+    android:textAppearance="?android:textAppearanceMedium"
+    android:layout_height="wrap_content" />
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycler"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/title_tv"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true" />
+
+
+<CheckBox
+    android:id="@+id/checkboxOthers"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_width="match_parent"
+    android:text="@string/others"
+    android:layout_below="@id/recycler"
+    android:textSize="18dp"
+    android:textStyle="bold"
+    android:layout_height="wrap_content" />
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:text="DONE" />
+
+
+
+</RelativeLayout>

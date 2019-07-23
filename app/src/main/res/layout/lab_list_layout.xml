@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FCEDED"
+    android:layout_margin="4dp"
+    >
+    <TextView
+        android:id="@+id/txtLabIDShow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/farm_loc"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/txtLabID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginLeft="38dp"
+        />
+
+        <TextView
+            android:id="@+id/txtCropName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgDelete"
+            android:layout_toRightOf="@+id/txtLabID"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            />
+
+    <ImageView
+    android:id="@+id/imgDelete"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:src="@drawable/delete"
+        android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:layout_gravity="center"/>
+</RelativeLayout>
+

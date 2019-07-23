@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="289dp"
+        android:layout_height="389dp"
+        android:layout_centerInParent="true"
+
+       />
+
+        <TextView
+            android:id="@+id/txtBarcodeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignLeft="@+id/surfaceView"
+            android:text="No Barcode Detected"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+
+
+    <EditText
+        android:id="@+id/etEnterPin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:background="#0B8A05"
+        android:inputType="" android:textColorHint="#fff"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Enter Pin"
+/>
+
+
+</RelativeLayout>
+
+</RelativeLayout>

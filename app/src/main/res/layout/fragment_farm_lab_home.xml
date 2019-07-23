@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:clickable="true"
+    tools:context=".fragments.FarmLabHome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/new_logo"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@color/theme_color"
+                android:padding="3dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/lab"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/farm_lab"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+
+                <Button
+                    android:id="@+id/btnAddNewFarmLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/transparent_white"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="13dp"
+                    android:textAllCaps="false"
+                    android:text="@string/add_new_farm_lab"/>
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="+91-123-456-7890"-->
+                <!--android:textSize="16dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/white"-->
+                <!--/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/help_team"-->
+                <!--android:textSize="16dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/white"-->
+                <!--/>-->
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/transparent_white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:id="@+id/btnFirstFarm"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/transparent_white"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/white_circle"
+            android:src="@drawable/farmer_practice"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:layout_margin="3dp"
+            android:text="@string/farmer_practice"
+            android:gravity="center"
+            android:textSize="17dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnSecondFarm"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/transparent_white"
+        >
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/white_circle"
+        android:src="@drawable/logo"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:layout_margin="3dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:text="@string/pbri_practice"/>
+    </RelativeLayout>
+</LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/listLabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/btnAddNewFarmLab"
+        ></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</RelativeLayout>    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/imgGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:background="#20030303"
+        >
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/gif2"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

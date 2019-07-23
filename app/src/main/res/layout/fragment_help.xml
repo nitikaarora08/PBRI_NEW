@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:clickable="true"
+    tools:context=".fragments.Help">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/farm_lab_book1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/new_logo"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:padding="6dp"
+                    android:background="@color/theme_color"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/contact"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/help"
+                        android:textStyle="bold"
+                        android:textSize="22dp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent_white"
+    android:layout_margin="15dp"
+    android:padding="10dp"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="@string/contact"-->
+                <!--android:background="@color/theme_color"/>-->
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/contact_address"
+                android:gravity="top"
+                android:padding="9dp"
+                android:background="@drawable/light_black_square1"
+                />
+
+  <!--<EditText-->
+                <!--android:id="@+id/etComplain"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+      <!--android:layout_marginLeft="10dp"-->
+      <!--android:layout_marginRight="10dp"-->
+      <!--android:hint="@string/write_description"-->
+                <!--android:gravity="top"-->
+                <!--android:padding="9dp"-->
+                <!--android:background="@drawable/light_black_square1"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgText"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:background="@drawable/black_square1"-->
+                <!--android:padding="5dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:src="@drawable/text"/>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llAttchment"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_marginTop="10dp">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:textSize="20dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/add_attachment"/>-->
+
+                    <!--&lt;!&ndash;<View&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="1dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="#A09D9D"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imgLink"-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:src="@drawable/link"/>-->
+
+                    <!--&lt;!&ndash;<View&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="1dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="#A09D9D"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginRight="100dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+                <!--</LinearLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageAttached"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<TextView-->
+                <!--android:id="@+id/txtfilePath"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/imgPdf"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:padding="5dp"-->
+                <!--android:background="@drawable/black_square1"-->
+                <!--android:src="@drawable/pdf"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btnSendHelp"-->
+                <!--android:layout_width="180dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:background="@drawable/roundedbutton"-->
+                <!--android:text="Send"-->
+                <!--/>-->
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contactus_address"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contactus_num"
+                android:textColor="#000000"
+                android:textSize="16dp"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contactus_email"
+                android:textColor="#000000"
+                android:textSize="16dp"
+            />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guideline"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pdf"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textStyle="italic"
+                    android:textSize="18dp"
+                    android:text="@string/guideline_farmer"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pdf"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="@string/guideline_staff"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+ <LinearLayout
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+     android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pdf"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="@string/guideline_farmer"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/references"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://agritech.tnau.ac.in/"
+                android:textSize="18dp"
+                android:fontFamily="cursive"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"/>
+          <TextView
+              android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://patanjalibio.com/"
+              android:fontFamily="cursive"
+              android:textStyle="bold"
+              android:padding="5dp"
+                android:textSize="18dp"
+                android:textColor="#3F51B5"/>
+
+
+
+        </LinearLayout></ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

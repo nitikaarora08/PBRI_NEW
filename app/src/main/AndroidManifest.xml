@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.patanjali.pbri_new">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.READ_SMS" />-->
+    <!--<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>-->
+    <!--<uses-permission android:name="android.permission.BROADCAST_SMS" tools:ignore="ProtectedPermissions" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+    <!--<uses-permission android:name="android.permission.SEND_SMS" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_SMS" />-->
+
+    <!--<uses-feature android:name="android.hardware.camera" android:required="true" />-->
+    <!--<uses-feature android:name="android.hardware.camera.autofocus" />-->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.CLEAR_APP_CACHE" tools:ignore="ProtectedPermissions" />-->
+    <!--<uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" tools:ignore="ProtectedPermissions" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="false"
+        android:testOnly="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <!--<uses-library android:name="org.apache.http.legacy" android:required="true"/>-->
+        <activity
+            android:name=".activity.FarmerProfile"
+            android:windowSoftInputMode="adjustPan" android:label="@string/title_activity_farmer_profile"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBfFMZMrB1kzxcDt9WjxfQbAHNF0meip3w" />
+
+        <activity
+            android:name=".activity.Home"
+            android:configChanges="locale"
+            android:windowSoftInputMode="adjustPan" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+        <service android:name=".service.LocationMotironingService"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".activity.VerifyOTP"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".activity.LanguageActivity"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".activity.ScannedBarcodeActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

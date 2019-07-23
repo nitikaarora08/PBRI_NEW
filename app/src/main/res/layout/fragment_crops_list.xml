@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CropsList">
+    <LinearLayout
+        android:id="@+id/farm_income1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:background="@drawable/splash"
+        android:orientation="vertical"
+        android:clickable="true"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/new_logo"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:background="@color/theme_color"
+                android:padding="6dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/income_white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/crop_info"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="+91-123-456-7890"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/help_team"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--/>-->
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_white"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAddNewCrop"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/transparent_white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/add_new_crop"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listLabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAddNewFarmLab"
+                ></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

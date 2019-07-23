@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#FDF6F4"
+    tools:context=".fragments.MainCrops">
+
+    <RelativeLayout
+        android:id="@+id/imgGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:background="#20030303"
+        >
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/gif2"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:text="@string/back"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back"
+        />
+
+    <RelativeLayout
+        android:id="@+id/frame_layout_others"
+        android:layout_width="match_parent"
+        android:elevation="6dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="#9A525252"
+        >
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close"
+            android:elevation="8dp"
+            android:padding="5dp"
+            android:background="@drawable/roundedbutton_dialog_promo"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/roundedbutton_dialog_promo">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Main Crop"
+                android:textSize="25dp"
+                android:textStyle="italic|bold"
+                android:textColor="#FF5722"
+                android:layout_marginBottom="20dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="bottom"
+                >
+
+                <EditText
+                    android:id="@+id/edOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:singleLine="true"
+                    android:hint="Name"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/white_box"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSaveOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_square1"
+                android:layout_marginTop="25dp"
+                android:text="@string/submit"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnAddNewCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/others"/>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_marginTop="63dp"
+        android:layout_height="wrap_content"
+         />
+
+
+
+</RelativeLayout>

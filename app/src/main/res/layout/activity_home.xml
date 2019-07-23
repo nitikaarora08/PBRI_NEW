@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".activity.Home">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/setting"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+        <Spinner
+            android:id="@+id/SpinnerSetting"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:elevation="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="45dp"
+            android:src="@drawable/new_logo"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_layout_Lang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#E8FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/btnHindi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/hindi"
+                android:textSize="18dp"
+                android:background="@drawable/black_square1"
+                />
+            <Button
+                android:id="@+id/btnEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="18dp"
+                android:text="@string/english"
+                android:background="@drawable/black_square1"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/theme_color"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:text="PBRI NEW"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <Button
+                android:id="@+id/btnLanguage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/choose_language"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/transparent_white"/>
+            <LinearLayout
+                android:id="@+id/linlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+                <LinearLayout
+                    android:id="@+id/btnHome"
+                    android:layout_width="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="#A9094B02"
+                    android:gravity="center"
+                    android:orientation="vertical"  >
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="6dp"
+                        android:background="@drawable/white_circle"
+                        android:src="@drawable/home1"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:textSize="19dp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnFarmDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#9E026F56"
+                    android:gravity="center"
+                    android:orientation="vertical"  >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/white_circle"
+                        android:src="@drawable/farmdetail"
+                        android:padding="3dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:text="@string/farm_detail"
+                        android:gravity="center"
+                        android:textSize="19dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/linlayout1"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:id="@+id/btnFarmLab"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="#026F56"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"  >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="6dp"
+                        android:background="@drawable/white_circle"
+                        android:src="@drawable/farmlabhome1"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:text="@string/farm_lab"
+                        android:textSize="19dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnCostBenefits"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#75A364"
+                    android:gravity="center"
+                    android:orientation="vertical"  >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/cost_benifit"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cost_benefits"
+                        android:textStyle="bold"
+                        android:textSize="19dp"
+                        android:textColor="@color/white"
+                        android:background="#75A364"
+                        />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/btnAnalysis"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="#E82E6429"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical"  >-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/analysis"-->
+                <!--/>-->
+
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="@string/analysis"-->
+                <!--android:textSize="19dp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:background="#E82E6429"-->
+                <!--/>-->
+                <!--</LinearLayout>-->
+                <LinearLayout
+                    android:id="@+id/btnHelp"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="#094B02"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"  >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp"
+                        android:background="@drawable/white_circle"
+                        android:src="@drawable/contact1"
+                         />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/help"
+                        android:gravity="center"
+                        android:textSize="19dp"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp"></FrameLayout>
+    <FrameLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="3dp"></FrameLayout>
+    <FrameLayout
+        android:id="@+id/container3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"></FrameLayout>
+    <FrameLayout
+        android:id="@+id/container4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"></FrameLayout>
+<FrameLayout
+        android:id="@+id/container5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"></FrameLayout>
+
+
+</RelativeLayout>
+
+
+

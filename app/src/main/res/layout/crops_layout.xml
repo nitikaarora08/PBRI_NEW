@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#FCEDED"
+android:layout_margin="4dp"
+    >
+<TextView
+    android:id="@+id/txtLabIDShow"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:scaleType="fitXY"
+    android:gravity="center"
+    android:textSize="20dp"
+    />
+
+<ImageView
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:src="@drawable/farm_loc"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center"/>
+<TextView
+    android:id="@+id/txtLabID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:padding="10dp"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:layout_margin="2dp"
+    android:layout_marginLeft="20dp"
+    />
+<TextView
+    android:id="@+id/txtCropName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="20dp"
+    />
+
+</LinearLayout>
+
+

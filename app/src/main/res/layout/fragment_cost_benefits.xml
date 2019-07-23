@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".fragments.CostBenefits">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/imgGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:background="#20030303"
+        >
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/gif2"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        android:visibility="gone"
+        android:background="@drawable/splash"
+        android:id="@+id/expenses1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:padding="5dp"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/btnBackToHome"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/roundedbutton"
+                android:text="@string/back"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+
+            <Button
+                android:id="@+id/saveCostBenifit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/roundedbutton"
+                android:text="@string/save"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/new_logo"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:background="@color/theme_color"
+                    android:padding="6dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/expenses_white"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cost_benefits"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/transparent_white"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_aadhaar_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/Landpreparation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/costlandpreparation"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:maxLength="8"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/Seed_farmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/input_aadhaar_no"
+                        >
+
+
+                        <EditText
+                            android:id="@+id/Seed"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:maxLength="8"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/costseed" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_pan_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Seed_farmer"
+                        >
+
+                        <EditText
+                            android:id="@+id/Fertilizer"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="numberDecimal"
+                            android:maxLength="8"
+                            android:hint="@string/costfertilizer" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_village_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/input_pan_no"
+                        >
+
+                        <EditText
+                            android:id="@+id/pestisides"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:maxLength="8"
+
+                            android:inputType="numberDecimal"
+
+                            android:hint="@string/costpestiside" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/input_village_name"
+                        >
+
+                        <EditText
+                            android:id="@+id/Planting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_marginLeft="10dp"
+                            android:maxLength="8"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/costplanting" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_landholding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/Weeding"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="numberDecimal"
+                            android:maxLength="8"
+
+                            android:hint="@string/costweeding" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/input_landholding"
+                        >
+
+                        <EditText
+                            android:id="@+id/Irrigation"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:maxLength="8"
+                            android:inputType="numberDecimal"
+
+                            android:hint="@string/costirrigation" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/input_dob"
+                        >
+
+                        <EditText
+                            android:id="@+id/HarvestingThresing"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:maxLength="8"
+                            android:layout_marginLeft="10dp"
+
+                            android:inputType="numberDecimal"
+                            android:hint="@string/costharvesting" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/input_age"
+                        >
+
+                        <EditText
+                            android:id="@+id/winnoing"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:maxLength="8"
+                            android:inputType="numberDecimal"
+
+                            android:hint="@string/costwinnoying" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/input_mobileno"
+                        >
+
+                        <EditText
+                            android:id="@+id/Packing"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:maxLength="8"
+
+                            android:inputType="numberDecimal"
+                            android:hint="@string/costpacking" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/input_emailid"
+                        >
+
+                        <EditText
+                            android:id="@+id/tranportation"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="numberDecimal"
+
+                            android:maxLength="8"
+                            android:hint="@string/costtransportation" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/otherexpenses"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="numberDecimal"
+
+                            android:maxLength="8"
+                            android:hint="@string/otherexpenses" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/totalcost"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/white_line"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="numberDecimal"
+                            android:text="0"
+                            android:maxLength="8"
+                            android:hint="@string/total_cost" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"/>
+                </LinearLayout></ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/income1"
+    android:background="@drawable/splash"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:elevation="2dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/new_logo"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:background="@color/theme_color"
+            android:padding="6dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/income_white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="+91-123-456-7890"-->
+            <!--android:textSize="16dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/white"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/help_team"-->
+            <!--android:textSize="16dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/white"-->
+            <!--/>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_white"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="5">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/Items"
+                android:gravity="center"
+                android:background="#3F51B5"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_weight="1.4"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/main_crop"
+                android:background="#2196F3"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/sub_crop"
+                android:background="#3F51B5"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:background="#2196F3"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/cost_others"
+                android:layout_weight="1.6"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:weightSum="5">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/production"
+                android:textColor="@color/white"
+                android:background="#2196F3"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_weight="1.4"
+                />
+            <EditText
+                android:id="@+id/b1"
+                android:layout_width="0dp"
+                android:maxLength="8"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:background="@drawable/white_box"
+                android:inputType="number"
+                android:layout_weight="1"
+                />
+
+            <EditText
+                android:id="@+id/b2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:textAllCaps="false"
+                android:maxLength="8"
+                android:background="@drawable/white_box"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+
+            <EditText
+                android:id="@+id/b3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_box"
+                android:maxLength="8"
+                android:inputType="number"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_weight="1.6"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="5">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/marketing"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:background="#3F51B5"
+                android:textColor="@color/white"
+                android:layout_weight="1.4"
+                />
+            <EditText
+                android:id="@+id/b4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:maxLength="8"
+                android:gravity="center"
+                android:background="@drawable/white_box"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                />
+            <EditText
+                android:id="@+id/b5"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:background="@drawable/white_box"
+                android:maxLength="8"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <EditText
+                android:id="@+id/b6"
+                android:layout_width="0dp"
+                android:background="@drawable/white_box"
+                android:inputType="number"
+                android:maxLength="8"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_weight="1.6"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="5">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#2196F3"
+                android:textColor="@color/white"
+                android:text="@string/marketvalue"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_weight="1.4"
+                />
+            <EditText
+                android:id="@+id/b7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/white_box"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                />
+            <EditText
+                android:id="@+id/b8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:maxLength="8"
+                android:textAllCaps="false"
+                android:text="0"
+                android:background="@drawable/white_box"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <EditText
+                android:id="@+id/b9"
+                android:layout_width="0dp"
+                android:text="0"
+                android:inputType="number"
+                android:maxLength="8"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/white_box"
+                android:textAllCaps="false"
+                android:layout_weight="1.6"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/btnCancelCostBenefit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton"
+                android:text="@string/cancel"
+                android:layout_marginRight="55dp"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:id="@+id/btnOkCostBenefit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/new_logo"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="90dp"
+                        android:layout_height="60dp"
+                        android:background="@color/theme_color"
+                        android:padding="6dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/income_white"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cost_benefits"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:weightSum="2"
+                    android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/expenses"
+                    android:layout_width="0dp"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent_white"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:elevation="2dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="40dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/white_circle"
+                        android:padding="12dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/expenses_black"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/expense"
+                        android:textAllCaps="true"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:elevation="2dp"-->
+                    <!--android:src="@drawable/arrow_down" />-->
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/income"
+                    android:layout_width="0dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/transparent_white"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:elevation="2dp"
+                        android:scaleType="fitXY"
+                        android:padding="12dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/white_circle"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/income"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:textColor="@color/black"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        android:text="@string/income"
+                        android:textAllCaps="true"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:elevation="2dp"-->
+                    <!--android:src="@drawable/arrow_down" />-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profit_loss"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:textSize="25dp"/>
+
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="5dp"-->
+    <!--&gt;-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/income_minus_expenses"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:padding="5dp"-->
+        <!--android:textSize="19dp"/>-->
+
+
+<!--</LinearLayout>-->
+                <TextView
+                    android:id="@+id/txtProfitLoss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:textColor="@color/white"
+                    android:paddingLeft="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/txtResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:paddingLeft="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:padding="5dp"
+                android:weightSum="2"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundedbutton"
+                    android:text="@string/back"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <Button
+                    android:id="@+id/save_farmerdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundedbutton"
+                    android:text="@string/save"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+</RelativeLayout>
